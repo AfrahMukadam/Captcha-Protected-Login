@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+		integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+		crossorigin="anonymous">
+	<script src="script.js"></script>
+</head>
+
+<body onload="generate()" class="center">
+
+
+    <form class="padd">
+        <fieldset>
+            <legend>
+                User Information
+            </legend>
+            <br><br>
+
+            <label for="name">Enter Name:</label><br>  
+            <input type="text" id="name" name="name">
+            <br> <br> 
+
+            <label for="pass">Enter Password:</label><br>
+            <input type="Password" id="pass" name="pass">
+
+            <br><br> 
+         
+            <div id="image" class="inline" selectable="False"></div>
+        
+            <div class="inline" onclick="generate()">
+                <i class="fas fa-sync"></i>
+            </div>
+            <br><br>
+
+            <label >Enter the Captcha:</label><br>
+            <input type="text" id="submit"/>
+            
+            <br><br><br>
+        
+            <button class="submit" id="button" onclick="printmsg()" />Submit</button>
+            <br><br>
+
+            <p id="key"></p>
+        </fieldset>
+    </form>
+            
+
+	
+
+
+
+
+</body>
+
+</html>
